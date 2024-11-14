@@ -18,19 +18,53 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: start;
-  gap: 40px;
+  gap: 2A0px;
 }
 
-.sectionDisplay {
+.rangeDisplay,
+.subsection {
   width: 100%;
 }
 
-input {
+.slidecontainer input {
   width: 100%;
   padding-block: 10px;
   margin-block: 2px;
   /* border: 1px solid gray; */
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+select {
+  width: 100%;
+  padding-block: 10px;
+  appearance: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border: 0;
+  padding-left: 5px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.titles {
+  padding-block: 3px;
+  font-size: large;
+}
+
+button {
+  width: 100%;
+  padding-block: 10px;
+  background-color: darkgreen;
+  color: white;
+  font-size: larger;
+}
+
+button:hover {
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: 700;
 }

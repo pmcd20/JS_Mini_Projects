@@ -10,15 +10,47 @@
   <body>
     <section class="mainContainer">
 
-        <div class="sectionDisplay">
-            <h4>Sections: <span class="noOfSections"></span></h3>
+        <div class="rangeDisplay">
+            <h4 class="titles">Sections: <span class="noOfSections"></span></h3>
                 <div class="slidecontainer">
                     <input type="range" min="1" max="100" value="0"/>
                 </div>
-            
-            
         </div>
-     
+
+        <div class="rangeDisplay">
+          <h4 class="titles">Words per section: <span class="noOfwords"></span></h3>
+              <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="0"/>
+              </div>
+      </div>
+
+      <div class="subsection">
+        <h4 class="titles">Tag:</h4>
+        <select name="elements" id="element-dropdown">
+          <option value="paragraph" selected>&lt;p&gt;</option>
+          <option value="headOne" >&lt;h1&gt;</option>
+          <option value="headTwo" >&lt;h2&gt;</option>
+          <option value="headThree" >&lt;h3&gt;</option>
+          <option value="headFour">&lt;h4&gt;</option>
+        </select>
+      </div>
+
+      <div class="subsection">
+        <h4 class="titles">Include HTML:</h4>
+        <select name="question" id="question-dropdown">
+          <option value="1" selected>Yes</option>
+          <option value="0" >No</option>
+  
+        </select>
+      </div>
+
+      <div class="subsection">
+        <button>Generate</button>
+      </div>
+
+      <div class="subsection">
+        <textarea id="output" name="output" rows="10" cols="100" readonly></textarea>
+      </div>
 
     </section>
   </body>
