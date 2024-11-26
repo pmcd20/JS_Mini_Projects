@@ -11,22 +11,22 @@
     <section class="mainContainer">
 
         <div class="rangeDisplay">
-            <h4 class="titles">Sections: <span class="noOfSections"></span></h3>
+            <h4 class="titles">Sections: <span id="noOfSections"></span></h3>
                 <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="0"/>
+                    <input type="range" min="1" max="50" value="1" class="sectionRange"/>
                 </div>
         </div>
 
         <div class="rangeDisplay">
-          <h4 class="titles">Words per section: <span class="noOfwords"></span></h3>
+          <h4 class="titles">Words per section: <span id="noOfwords"></span></h3>
               <div class="slidecontainer">
-                  <input type="range" min="1" max="100" value="0"/>
+                  <input type="range" min="1" max="100" value="10" class="wordRange"/>
               </div>
       </div>
 
       <div class="subsection">
         <h4 class="titles">Tag:</h4>
-        <select name="elements" id="element-dropdown">
+        <select name="htmlElements" id="htmlElement-dropdown">
           <option value="paragraph" selected>&lt;p&gt;</option>
           <option value="headOne" >&lt;h1&gt;</option>
           <option value="headTwo" >&lt;h2&gt;</option>
@@ -37,9 +37,9 @@
 
       <div class="subsection">
         <h4 class="titles">Include HTML:</h4>
-        <select name="question" id="question-dropdown">
-          <option value="1" selected>Yes</option>
-          <option value="0" >No</option>
+        <select name="htmlQuestion" id="htmlQuestion-dropdown">
+          <option value="1" >Yes</option>
+          <option value="0" selected>No</option>
   
         </select>
       </div>
