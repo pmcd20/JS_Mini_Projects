@@ -27,7 +27,7 @@
       <div class="subsection">
         <h4 class="titles">Tag:</h4>
         <select name="htmlElements" id="htmlElement-dropdown">
-          <option value="paragraph" selected>&lt;p&gt;</option>
+          <option value="para" selected>&lt;p&gt;</option>
           <option value="headOne" >&lt;h1&gt;</option>
           <option value="headTwo" >&lt;h2&gt;</option>
           <option value="headThree" >&lt;h3&gt;</option>
@@ -45,11 +45,12 @@
       </div>
 
       <div class="subsection">
-        <button>Generate</button>
+        <button id="generateText">Generate</button>
       </div>
 
       <div class="subsection">
-        <textarea id="output" name="output" rows="10" cols="100" readonly></textarea>
+        <textarea id="outputLorem" name="output" rows="10" cols="100" readonly
+          style="white-space: pre; overflow: auto;"></textarea>
       </div>
 
     </section>
