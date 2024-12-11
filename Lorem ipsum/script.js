@@ -65,11 +65,19 @@ function OutPutText(e) {
     const lines = [];
 
     for (let i = 0; i < generatorRequest.noOfSections; i++) {
-        lines.push(sliced.join(' '));
+        console.log(generatorRequest.includeHTML);
+        if (generatorRequest.includeHTML === true) {
+
+            lines.push(`<${generatorRequest.HtmlElement}>${sliced.join(' ')}</${generatorRequest.HtmlElement}>`);
+        }
+        else {
+
+            lines.push(sliced.join(' '));
+        }
     }
 
     const formattedText = lines.join('\n');
-    outputLorem.value = formattedText;
+    outputLorem.innerHTML = formattedText;
 
 
 
