@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem Ipsum Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section class="projectTitle">Lorem Ipsum Generator</section>
+    <section class="mainContainer">
+
+        <div class="rangeDisplay">
+            <h4 class="titles">Sections: <span id="noOfSections"></span></h3>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="50" value="1" class="sectionRange"/>
+                </div>
+        </div>
+
+        <div class="rangeDisplay">
+          <h4 class="titles">Words per section: <span id="noOfwords"></span></h3>
+              <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="10" class="wordRange"/>
+              </div>
+      </div>
+
+      <div class="subsection">
+        <h4 class="titles">Tag:</h4>
+        <select name="htmlElements" id="htmlElement-dropdown">
+          <option value="p" selected>&lt;p&gt;</option>
+          <option value="h1" >&lt;h1&gt;</option>
+          <option value="h2" >&lt;h2&gt;</option>
+          <option value="h3" >&lt;h3&gt;</option>
+          <option value="h4">&lt;h4&gt;</option>
+        </select>
+      </div>
+
+      <div class="subsection">
+        <h4 class="titles">Include HTML:</h4>
+        <select name="htmlQuestion" id="htmlQuestion-dropdown">
+          <option value="1" >Yes</option>
+          <option value="0" selected>No</option>
+  
+        </select>
+      </div>
+
+      <div class="subsection">
+        <button id="generateText">Generate</button>
+      </div>
+
+      <div class="subsection">
+        <textarea id="outputLorem" name="output" rows="10" cols="100" readonly
+          style="white-space: pre; overflow: auto;"></textarea>
+      </div>
+
+    </section>
+  </body>
+</html>
